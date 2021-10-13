@@ -21,7 +21,7 @@ const createEvent = async (req, res) => {
         })
 
     } catch (err) {
-        console.error(err.message)
+        console.log(err.message)
         res.status(500).json({
             ok: false,
             msg: 'Something went wrong'
@@ -65,7 +65,7 @@ const updateEvent = async (req, res) => {
         })
 
     } catch (err) {
-        console.error(err.message)
+        console.log(err.message)
         res.status(500).json({
             ok: false,
             msg: 'Something went wrong'
@@ -103,7 +103,7 @@ const deleteEvent = async (req, res) => {
         })
         
     } catch (err) {
-        console.error(err.message)
+        console.log(err.message)
         res.status(500).json({
             ok: false,
             msg: 'Something went wrong'

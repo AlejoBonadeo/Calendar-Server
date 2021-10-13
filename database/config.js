@@ -12,7 +12,7 @@ const dbConnection = async () => {
         console.log('Mongo online')
 
     } catch (err) {
-        console.error(err.message)
+        console.log(err.message)
         throw new Error('Error when initializing database')
     }
 
